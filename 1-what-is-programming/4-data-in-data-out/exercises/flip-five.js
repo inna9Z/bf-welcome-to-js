@@ -3,13 +3,15 @@
 /* Flip Five
 
   Data In:
-
+   any text
 
   Data Out:
-
+    the reversed input if it was 5 characters long
+    the unchanged input if it was not 5 characters long
 
   Test Cases:
-
+  'hello' => 'olleh'
+  'table' => 'elbat'
 
 */
 

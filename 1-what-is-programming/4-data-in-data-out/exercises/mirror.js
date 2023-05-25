@@ -3,12 +3,13 @@
 /* Mirror
 
   Data In:
-
+  any text
 
   Data Out:
-
+  mirrored version of the input text
 
   Test Cases:
+  'hello' => 'olleh'
 
 
 */
