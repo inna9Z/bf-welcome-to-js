@@ -16,11 +16,20 @@
 /* ---   ?   --- */
 
 // input <- prompt('do whatever you want')
-
+let input =  prompt ('do whatever you want');
 /* ---   ?   --- */
 
 // message <- 'your input is '
+let message = 'your input is '
 
+if (input == null) {
+  message = message + 'null'
+} else {
+  message = '';
+} if (input.length !== 0) {
+  message = 'not'
+} 
+alert(message);
 // IF: input === null
 /* ---   ?   --- */
 //   message <- message + 'null'

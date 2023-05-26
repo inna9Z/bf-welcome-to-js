@@ -1,9 +1,10 @@
+'use strict';
 // #todo
 
 // prettier-ignore
 { // so prettier does not remove the extra spacing
 
-'use strict';
+
 
 
 2 + 2;

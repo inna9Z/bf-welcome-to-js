@@ -1,3 +1,4 @@
+'use strict'
 // #todo
 
 // prettier-ignore

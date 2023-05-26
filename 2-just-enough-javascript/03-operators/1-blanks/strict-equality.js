@@ -10,11 +10,11 @@ console.log('hello' === 'hello');
 console.log('Bye' === 'Bye');
 console.log(1 === 1.0);
 // exercises
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
+console.log('hi' === 'hi');
+console.log( 'morning' === 'morning');
+console.log(2 === 2);
+console.log(34 === 34);
+console.log('name' === 'name');
 
 console.log('--- write 5 comparisons that evaluate to false ---');
 // examples
@@ -22,8 +22,8 @@ console.log('hello' === 'hello ');
 console.log('Bye' === 'bye');
 console.log(1 === 1.1);
 // exercises
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
+console.log(' hello' === 'hello');
+console.log(1.3 === 1.32);
+console.log(1.5 === 1.543);
+console.log('Hello ' === 'hello');
+console.log(1 === 'hello');
