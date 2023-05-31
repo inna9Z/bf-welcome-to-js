@@ -17,12 +17,15 @@ whenFormDataChanges('to-sort', () => {
   // --- sort them input by length ---
 
   let sortedInputs = '';
-  if (left.length <= right.length) {
+  if (left.length < right.length ) {
     sortedInputs = left + ', ' + right;
-  } else if (right.length <= left.length) {
+  } else if (right.length < left.length) {
     sortedInputs = right + ', ' + left;
-  } else {
-    sortedInputs = left + '\n' + right;
+
+  }
+  
+   else  {
+    sortedInputs = left + ', ' + right;
   }
 
   // --- display the sorted strings ---

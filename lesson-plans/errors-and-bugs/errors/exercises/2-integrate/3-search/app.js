@@ -6,18 +6,18 @@ import {
 } from '../../../../../../../lib/dom-io/index.js';
 
 /*
-  environment:
+  environment: Chrome 
 
-  name:
-  message:
+  name: SyntaxError
+  message: Cannot use import statement outside a module
 
-  location:
+  location: line 35
 
-  life cycle:
+  life cycle: 
 
-  the mistake:
+  the mistake: Forgot to declare the variable using 'let' keyword
 
-  the fix(es):
+  the fix(es): declare the variable doesExist using the 'let'
 */
 
 whenFormDataChanges('search-input', () => {
@@ -32,7 +32,7 @@ whenFormDataChanges('search-input', () => {
 
   // --- do the search ---
 
-  doesExist = false;
+  let doesExist = false;
 
   if (caseSensitive) {
     doesExist = searchThis.includes(findThis);

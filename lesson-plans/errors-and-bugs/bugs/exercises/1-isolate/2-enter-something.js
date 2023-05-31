@@ -18,7 +18,7 @@
 let message = '';
 
 let input = null;
-while (input === null || input.length === 0) {
+while (!input) {
   const input = prompt('enter something');
 
   message = 'you entered "' + input + '"';

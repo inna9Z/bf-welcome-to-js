@@ -6,25 +6,25 @@ console.log('--- in execution phase ---');
 
 
 /*
-  environment:
+  environment: Crhrome
 
-  name:
-  message:
+  name: SyntaxError
+  message: Unexpected token '{'
 
-  location:
+  location: line 27 
 
   life cycle:
 
-  the mistake:
+  the mistake:  The condition in else (userName.length < 5) is missing an if keyword
 
-  the fix(es):
+  the fix(es): Add if keyword to condition in else (userName.length < 5)
 */
 
 let userName = 'indrogo';
 
 if (userName.length < 3) {
   console.log('too short');
-} else (userName.length < 5) {
+} else if (userName.length < 5) {
   console.log('just right');
 } else {
   console.log('too long');

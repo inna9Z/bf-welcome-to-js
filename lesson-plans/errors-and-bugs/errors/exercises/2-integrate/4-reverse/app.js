@@ -6,18 +6,18 @@ import {
 } from '../../../../../../../lib/dom-io/index.js';
 
 /*
-  environment:
+  environment: Chrome 
 
-  name:
-  message:
+  name: SyntaxError
+  message: Cannot use import statement outside a module
 
-  location:
+  location: 34
 
-  life cycle:
+  life cycle: 
 
-  the mistake:
+  the mistake: Ussing screaminf instead of text
 
-  the fix(es):
+  the fix(es): Replace screaming to text
 */
 
 whenFormDataChanges('reversify', () => {
@@ -31,7 +31,7 @@ whenFormDataChanges('reversify', () => {
   // --- reverse the string input ---
 
   let reversed = '';
-  for (let character of screaming) {
+  for (let character of text) {
     reversed = character + reversed;
   }
 
