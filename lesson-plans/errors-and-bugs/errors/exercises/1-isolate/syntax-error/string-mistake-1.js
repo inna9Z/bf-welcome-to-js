@@ -6,21 +6,20 @@ console.log('--- in execution phase ---');
 
 
 /*
-  environment:
+  environment: Chrome
 
-  name:
-  message:
+  name: SyntaxError
+  message: Invalid or unexpected token
 
-  location:
+  location: line 23
 
-  life cycle:
+  life cycle: execution
 
-  the mistake:
+  the mistake: the string a being defined across two lines without proper line continuation
 
-  the fix(es):
+  the fix(es): To fix this, you can  remove spase 
 */
 
-const a = 'this is
-two lines';
+const a = 'this is two lines';
 
 

@@ -7,20 +7,20 @@ import {
 /*
   environment:
 
-  name:
-  message:
+  name: SyntaxError
+  message: Cannot use import statement outside a module
 
-  location:
+  location: 23
 
   life cycle:
 
-  the mistake:
+  the mistake: missing single quote
 
-  the fix(es):
+  the fix(es): add single quote
 */
 
 whenFormDataChanges('input', () => {
-  console.log(--- form data changed ---);
+  console.log('--- form data changed ---');
 
   // --- read the user's input ---
 

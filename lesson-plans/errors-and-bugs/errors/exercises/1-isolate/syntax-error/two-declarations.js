@@ -3,20 +3,20 @@
 console.log('--- in execution phase ---');
 
 /*
-  environment:
+  environment: Chrome
 
-  name:
-  message:
+  name: SyntaxError
+  message: Identifier 'tree' has already been declared
 
-  location:
+  location: line 22
 
-  life cycle:
+  life cycle: execute
 
-  the mistake:
+  the mistake: declaring the tree variable twice with the let keyword
 
-  the fix(es):
+  the fix(es): remove the second declaration of let 
 */
 
 let tree = 'oak';
 
-let tree = 'birch';
+ tree = 'birch';

@@ -9,12 +9,12 @@ console.log('xyZ'.toUpperCase()); // 'XYZ'
 
 // find 4 different ways to create each value using a string method
 
-console.log(); // 'apple'
-console.log(); // 'apple'
-console.log(); // 'apple'
-console.log(); // 'apple'
+console.log('Apple'.toLowerCase()); // 'apple'
+console.log(' apple '.trim()); // 'apple'
+console.log('APPle'.toLowerCase()); // 'apple'
+console.log('apple '.trim()); // 'apple'
 
-console.log(); // 'PIE'
-console.log(); // 'PIE'
-console.log(); // 'PIE'
-console.log(); // 'PIE'
+console.log('pie'.toUpperCase()); // 'PIE'
+console.log('Pie'.toUpperCase()); // 'PIE'
+console.log(' PIE '.trim()); // 'PIE'
+console.log(' PIE'.trim()); // 'PIE'

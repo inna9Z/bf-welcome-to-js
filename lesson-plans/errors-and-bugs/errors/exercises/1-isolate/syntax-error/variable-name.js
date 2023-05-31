@@ -7,21 +7,21 @@ console.log('--- in execution phase ---');
 
 
 /*
-  environment:
+  environment: Chrome
 
-  name:
-  message:
+  name: SyntaxError
+  message: Unexpected number
 
-  location:
+  location: line 25
 
-  life cycle:
+  life cycle: execute
 
-  the mistake:
+  the mistake: mistake when attempting to assign a value to a constant with the name 3.
 
-  the fix(es):
+  the fix(es): you need to choose a valid name for the constant
 */
 
 
-const 3 = 'three';
+const three = 'three';
 
 
