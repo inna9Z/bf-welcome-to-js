@@ -28,26 +28,36 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = _;
-while (_) {}
-console.log('input:', input);
+let input = "";
+let validInput = false;
 
-/* --- declare initial output --- */
+while (!validInput) {
+  input = prompt("Please enter a non-empty string:");
 
-let output = _;
+  if (input === null) {
+    // User canceled
+    continue;
+  }
 
-/* --- create final output --- */
+  if (input.trim().length === 0) {
+    // Empty input
+    continue;
+  }
 
-for (let _ of _) {
+  validInput = true;
 }
 
-/* --- alert the result --- */
+let mirroredLetters = "";
 
-console.log('output:', output);
-alert(output);
+for (let i = 0; i < input.length; i++) {
+  if (input[i].match(/[a-zA-Z]/)) {
+    mirroredLetters += input[i];
+  }
+}
 
-console.log('--- end program ---');
+mirroredLetters += "|" + mirroredLetters.split("").reverse().join("");
 
+console.log(input + "|" + mirroredLetters);
 /*
   checklist:
     [ ] the code is formatted

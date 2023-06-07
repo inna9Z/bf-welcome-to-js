@@ -24,4 +24,24 @@ console.log(_);
 console.log(_);
 
 // number is equal to 1 OR is equal to 2 OR is equal to 3
-console.log(_);
+
+
+let number = 2.5;
+
+console.log(number + ' is 1, 2 or 3');
+
+if (number === 1) {
+  console.log(number + ' is equal to 1');
+}
+
+if (number === 2) {
+  console.log(number + ' is equal to 2');
+}
+
+if (number === 3) {
+  console.log(number + ' is equal to 3');
+}
+
+if (number === 1 || number === 2 || number === 3) {
+  console.log(number + ' is equal to 1 OR is equal to 2 OR is equal to 3');
+}

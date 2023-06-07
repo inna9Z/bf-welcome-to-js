@@ -10,8 +10,15 @@ whenFormDataChanges('skippable', () => {
   console.log('--- form data changed ---');
 
   // --- read the user's input ---
-
+   let number = readNumber ('skip-size')
+   let phrase = readString ('phrase')
   // --- skip characters ---
-
+  let output = '';
+  for (let i = 0; i < phrase.length; i++) {
+    if (i % number !== 0) {
+      output += phrase[i];
+    }
+  }
   // --- display the result ---
+   displayString ('skipped', output)
 });

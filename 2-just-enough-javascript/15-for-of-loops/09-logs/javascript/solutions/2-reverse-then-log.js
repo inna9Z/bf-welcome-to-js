@@ -6,4 +6,9 @@ let backwards = 'tpircsavaj';
 //  assign the reversed string to `language`
 let language = '';
 
+for (let letters of backwards) {
+  language = letters + language
+}
+console.log(language);
+
 // log each character in `language`

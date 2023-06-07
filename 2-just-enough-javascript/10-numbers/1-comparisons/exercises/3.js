@@ -26,3 +26,17 @@ console.log(_);
 
 // number between 1 and 2 OR between 4 and 5 (exclusive)
 console.log(_);
+
+console.log(number + ' between 1 and 2, OR between 4 and 5 (exclusive)');
+
+if (number > 1 && number < 2) {
+  console.log(number + ' is greater than 1 AND is less than 2 (exclusive)');
+}
+
+if (number > 4 && number < 5) {
+  console.log(number + ' is greater than 4 AND is less than 5 (exclusive)');
+}
+
+if ((number > 1 && number < 2) || (number > 4 && number < 5)) {
+  console.log(number + ' is between 1 and 2 OR between 4 and 5 (exclusive)');
+}

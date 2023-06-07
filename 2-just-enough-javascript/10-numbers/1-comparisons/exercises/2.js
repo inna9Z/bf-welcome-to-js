@@ -26,3 +26,17 @@ console.log(_);
 
 // number between 1 and 2 OR between 4 and 5 (inclusive)
 console.log(_);
+
+console.log(number + ' between 1 and 2, OR between 4 and 5 (inclusive)');
+
+if (number >= 1 && number <= 2) {
+  console.log(number + ' is greater than or equal to 1 AND is less than or equal to 2 (inclusive)');
+}
+
+if (number >= 4 && number <= 5) {
+  console.log(number + ' is greater than or equal to 4 AND is less than or equal to 5 (inclusive)');
+}
+
+if ((number >= 1 && number <= 2) || (number >= 4 && number <= 5)) {
+  console.log(number + ' is between 1 and 2 OR between 4 and 5 (inclusive)');
+}

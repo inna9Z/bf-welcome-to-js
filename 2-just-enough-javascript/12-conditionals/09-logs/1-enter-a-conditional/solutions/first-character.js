@@ -1,9 +1,20 @@
 'use strict';
 
-let language = 'JavaScript';
+let userInput = prompt('Enter something 5 characters long.');
 
-// access the first character of the string
-//  then use strict equality to enter the conditional
-if (__) {
-  console.log(language);
+let message;
+if (userInput === null) {
+  // path 1
+  message = 'Good bye.';
+} else if (userInput.length >= 5) {
+  // path 2
+  message = 'Perfect!';
+} else if (userInput.length === 5) {
+  // path 3
+  message = 'Too long.';
+} else {
+  // path 4
+  message = 'Too short.';
 }
+
+alert(message);
