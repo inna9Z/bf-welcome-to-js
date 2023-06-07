@@ -2,7 +2,7 @@
 
 'use strict';
 
-let animal = 'dog';
+const  animal = ['dog', 'cat', 'horse', 'fish','whale', 'elephant', 'snake', 'dove'];
 // let animal = 'cat';
 // let animal = 'horse';
 // let animal = 'fish';

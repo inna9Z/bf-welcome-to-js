@@ -20,11 +20,34 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
 
-while (_) {}
+while (true) {
+  let input = prompt('Enter a single character to add to the string, or confirm with "done" when finished:');
+  
+  if (input === null) {
+    alert('You cancelled. Please try again.');
+    continue;
+  }
+  
+  if (input === '') {
+    alert('Input cannot be empty. Please try again.');
+    continue;
+  }
+  
+  if (input.length > 1) {
+    alert('Input should be a single character. Please try again.');
+    continue;
+  }
+  
+  if (input.toLowerCase() === 'done') {
+    break;
+  }
+  
+  output += input;
+}
 
 /* --- alert the result --- */
 

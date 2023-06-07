@@ -17,14 +17,21 @@
 
 // normalPhrase <- null
 
+let normalPhrase = null;
 // WHILE: normalPhrase === null
 //   normalPhrase <- prompt('enter something to flipflop')
 // :END WHILE
 
+while (normalPhrase === null) {
+  normalPhrase = prompt('enter something to flipflop')
+}
+
 /* ---   ?   --- */
 
+let previous = '';
 // previous <- ''
 
+let flipFlopped = '';
 // flipFlopped <- ''
 
 // FOR: current OF normalPhrase
@@ -36,6 +43,16 @@
 //   :END IF
 // :END FOR-OF
 
+
+for (let current of normalPhrase) {
+  if (previous !== '') {
+    flipFlopped = flipFlopped + current + previous;
+     previous = current
+  }
+  else {
+    previous = current
+  }
+}
 /* ---   ?   --- */
 
 // IF: flipFlopped.length < normalPhrase.length
@@ -44,4 +61,9 @@
 
 /* ---   ?   --- */
 
+if (flipFlopped.length < normalPhrase.length) {
+  flipFlopped = flipFlopped + normalPhrase[normalPhrase.length - 1]
+}
+
+alert(flipFlopped);
 // alert(flipFlopped)

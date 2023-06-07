@@ -3,6 +3,6 @@
 let language = 'JavaScript';
 
 // use only strict equality to enter the conditional
-if (__) {
+if (language === language) {
   console.log(language);
 }

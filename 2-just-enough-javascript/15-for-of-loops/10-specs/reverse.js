@@ -19,18 +19,22 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = _;
-while (_) {}
+let input = '';
+while (input === null || input === '') {
+  input = prompt('Enter a non-empty string:');
+}
 console.log('input:', input);
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
 
-for (let _ of _) {
+for (let i = input.length - 1; i >= 0; i--) {
+  output += input[i];
 }
+
 
 /* --- alert the result --- */
 

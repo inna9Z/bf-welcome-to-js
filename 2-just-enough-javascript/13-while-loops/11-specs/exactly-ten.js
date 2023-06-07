@@ -23,11 +23,30 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
 
-while (_) {}
+while (true) {
+ let input = prompt('input that is 10 characters long');
+ if (!input) {
+   alert('You cancelled. Please try again.');
+   continue;
+ }   if (input.length < 10) {
+    let remaining = 10 - input.length;
+    alert(`Input is too short. It should be ${remaining} characters longer. Please try again.`);
+    continue;
+  }
+  
+  if (input.length > 10) {
+    let excess = input.length - 10;
+    alert(`Input is too long. It should be ${excess} characters shorter. Please try again.`);
+    continue;
+  }
+  
+  output = input;
+  break;
+}
 
 /* --- alert the result --- */
 

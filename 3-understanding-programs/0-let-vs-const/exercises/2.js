@@ -18,10 +18,10 @@ console.log('-- begin --');
 
 */
 
-_;
+let x = 'a';
 console.log(x); // should print 'a'
 
-_;
+let y = 'b';
 console.log(y); // should print 'b'
 
 console.log(x); // should print 'a'

@@ -27,18 +27,30 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = _;
-while (_) {}
+let input = '';
+while (!input || !/^[a-zA-Z]+$/.test(input)) {
+  input = prompt("Enter a string of letters to convert into a bouncy string:");
+  if (input === null) {
+    // User canceled, prompt again
+    continue;
+  }
+}
 console.log('input:', input);
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
 
-for (let _ of _) {
+for (let i = 0; i < input.length; i++) {
+  if (i % 2 === 0) {
+    output += input[i].toLowerCase();
+  } else {
+    output += input[i].toUpperCase();
+  }
 }
+
 
 /* --- alert the result --- */
 

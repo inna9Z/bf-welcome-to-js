@@ -23,3 +23,42 @@
       '0 . x . 0'         -> '0 . X . 0'
 
 */
+
+// a variable to store the userInput
+'use strict';
+let message = '';
+while (true) {
+  const userInput = prompt('Please enter something:');
+  if (userInput === null) {
+    alert('There is no escape!');
+    continue;
+  }
+  if (userInput === '') {
+    alert('No empty string allowed');
+    continue;
+  }
+  if (userInput) {
+    message = userInput;
+    break;
+  }
+}
+let words = message.split(' ');
+let newMessage = words.map((word) => {
+  let characters = word.split('');
+  let transformedWord = characters.map((character, charIndex) => {
+    if (charIndex % 2 === 0) {
+      return character.toUpperCase();
+    } else {
+      return character.toLowerCase();
+    }
+  }).join('');
+  return transformedWord;
+}).join(' ');
+alert(newMessage); (edited) 
+
+alert(newMessage);
+
+
+
+
+
